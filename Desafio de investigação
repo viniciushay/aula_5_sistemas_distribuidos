@@ -32,3 +32,14 @@ Cliente 5 comprou. Restam: -1
 Cliente 7 comprou. Restam: 1
 Cliente 8 comprou. Restam: -3
 Estoque final: -3
+##
+O estoque final ficou coerente?
+R= não
+##
+Mais clientes conseguiram 'encontrar' a mesma quantidade disponível?
+R=sim
+##
+Explique por que uma loja virtual não pode simplesmente deixar todas as requisições alterarem o estoque sem coordenação.
+R=
+se houver apenas 1 unidade de um produto e dois clientes tentarem comprá-la ao mesmo tempo, ambos podem verificar que o estoque é 1 antes de qualquer atualização. Assim, os dois podem concluir a compra, causando uma venda duplicada e um estoque inconsistente.
+
