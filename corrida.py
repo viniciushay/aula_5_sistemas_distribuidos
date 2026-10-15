@@ -42,6 +42,14 @@ threads = []
 
 print("Saldo esperado: 500")
 print("Saldo obtido:", saldo)
+for i in range(10):
+    t = threading.Thread(target=sacar, args=(50,))
+    threads.append(t)
+    t.start()
+
+for t in threads:
+    t.join()
+
 
 
 
